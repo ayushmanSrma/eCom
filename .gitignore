@@ -10,6 +10,10 @@
 .svn/
 migrate_working_dir/
 
+# Firebase config files
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
 # IntelliJ related
 *.iml
 *.ipr
@@ -41,4 +45,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-firebase.json
