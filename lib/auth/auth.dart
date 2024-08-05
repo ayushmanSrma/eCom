@@ -1,8 +1,7 @@
 import 'package:e_com/auth/login_or_register.dart';
+import 'package:e_com/strapiFetch/homepage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
-import '../Authentication/homepage.dart';
 
 class AuthPage extends StatelessWidget {
   const AuthPage({super.key});
@@ -12,7 +11,7 @@ class AuthPage extends StatelessWidget {
     return Scaffold(
       body: StreamBuilder(stream: FirebaseAuth.instance.authStateChanges(), builder: (context,snapshot){
         if (snapshot.hasData){
-          return Homepage();
+          return ApiPage();
         } else {
           return const LoginOrRegister();
         }
