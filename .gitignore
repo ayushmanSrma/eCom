@@ -35,6 +35,9 @@ ios/Runner/GoogleService-Info.plist
 .pub/
 /build/
 
+# Environment variables
+.env
+
 # Symbolication related
 app.*.symbols
 
